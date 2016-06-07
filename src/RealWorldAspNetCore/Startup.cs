@@ -47,6 +47,8 @@ namespace RealWorldAspNetCore
                 app.UseExceptionHandler("/Home/Error");
             }
 
+            app.UseStatusCodePagesWithReExecute("/StatusCode/");
+
             app.UseStaticFiles();
 
             app.UseMvc(routes =>
